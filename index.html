@@ -77,70 +77,8 @@
 		<script src="./assets/js/apps/contacts/list/list_controller.js"></script>
 
 		<script type="text/javascript">
-		// ContactManager.Contact = Backbone.Model.extend({
-		// 	defaults: {
-		// 		firstName: 'no first name',
-		// 		lastName: 'no last name',
-		// 		phoneNumber: 'No phone number!'
-		// 	} 
-		// });
-
-		// ContactManager.ContactsCollection = Backbone.Collection.extend({
-		// 	model: ContactManager.Contact,
-		// 	comparator: function(a, b){
-		// 		var aFirstName = a.get('firstName');
-		// 		var bFirstName = b.get('firstName');
-		// 		if(aFirstName === bFirstName){
-		// 			var aLastName = a.get('lastName');
-		// 			var bLastName = b.get('lastName');
-		// 			if(aLastName === bLastName){return 0;}
-		// 			if(aLastName < bLastName){return -1}
-		// 			else{return 1;}
-		// 		}else{
-		// 			if(aFirstName < bFirstName){return -1;}
-		// 			else{ return 1;}
-		// 		}
-		// 	}
-		// });
-
-		// ContactManager.ContactItemView = Marionette.ItemView.extend({
-		// 	tagName: 'tr',
-		// 	template: '#contact-list-item',
-		// 	events: {
-		// 		'click': 'higlightName',
-		// 		'click button.delete': 'deleteModel'
-		// 	},
-
-		// 	higlightName: function(ev){
-		// 		this.$el.toggleClass('warning');
-		// 	},
-
-		// 	deleteModel: function(ev){
-		// 		ev.stopPropagation();
-		// 		this.trigger('contact:delete', this.model);
-		// 	}
-		// });
-
-		// ContactManager.ContactsView = Marionette.CollectionView.extend({
-		// 	tagName: 'table',
-		// 	className: 'table table-hover',
-		// 	template: '#contact-list',
-		// 	childView: ContactManager.ContactItemView,
-		// 	childViewContainer: 'tbody'
-
-		// });
-
-		ContactManager.on('before:start', function(){
-			// var contacts = ContactManager.request('contact:entities');
-			// var contactsListView = new ContactManager.ContactsApp.List.Contacts({
-			// 	collection: contacts
-			// });
-			ContactManager.ContactsApp.List.Controller.listContacts();
-			// ContactManager.mainRegion.show(contactsListView);
-		});
-
-		ContactManager.start();
-
+		
+			ContactManager.start();
 
 		</script>
 
